@@ -98,6 +98,59 @@ textarea {
    ========================================================================== */
 
 /* ========================================
+  Global Styles
+  ======================================== */
+
+  body,
+  html {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  a {
+    font-weight: 700;
+    color: #23a4cc;
+    text-decoration: none;
+  }
+
+  p {
+
+  }
+
+  img {
+
+  }
+
+  h1, h2, h3, h4 {
+
+  }
+
+  h1 {
+
+  }
+
+  h2 {
+
+  }
+
+  figure {
+
+  }
+
+  .btn {
+
+  }
+
+  input.btn {
+
+  }
+
+   figure,
+   img {
+     margin: 0;
+     padding: 0;
+   }
+
+/* ========================================
    Header
    ======================================== */
 
@@ -120,6 +173,36 @@ textarea {
    	clear: both;
   }
 
+/* ======== Featured News Item ============ */
+
+.top-story {
+  width: 100%;
+}
+
+/* ======== Sidebar ======================== */
+
+.sidebar-about-us,
+.sidebar-faqs {
+  display: none;
+}
+
+
+/* ======== Feed ========================== */
+
+.feed {
+  width: 100%;
+}
+
+.feed-img {
+  width: 45%;
+}
+
+/* ======== ABOUT PAGE ==================== */
+
+.contact-info{
+    width: 100%;
+}
+
 /* ========================================
    Footer
    ======================================== */
@@ -130,8 +213,8 @@ textarea {
   }
 
   .footer-logo {
-  	width: 47.5%;
-  	margin: auto;
+    width: 47.5%;
+    margin: auto;
   }
 
 
@@ -228,8 +311,162 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+  /* Tablet */
+
+  /* Header =========================== */
+  .main-header {
+      width: 100%;
+      margin: auto;
+      padding: 0 3%;
+  }
+
+  .main-header .header-wrapper {
+      width: 94%;
+      max-width: 960px;
+      margin: 0 auto;
+  }
+
+  .logo {
+      width: 40%;
+      float: left;
+  }
+
+  nav {
+      width: 60%;
+      float: left;
+  }
+
+  /* Featured News Item =========================== */
+
+  .top-story {
+      width: 100%;
+  }
+
+  .top-img {
+      width: 57%;
+      float: left;
+      padding-right: 3%;
+  }
+
+  .top-info {
+      width: 40%;
+      float: left;
+  }
+
+  /* Side Bar =========================== */
+
+  .sidebar {
+      clear: both;
+      width: 37%;
+      float: right;
+  }
+
+  .sidebar-about-us,
+  .sidebar-faqs {
+      display: block;
+  }
+
+  /* News Feed Section =========================== */
+
+  .feed {
+      width: 60%;
+      float: left;
+  }
+
+  .feed-img {
+      width: 35%;
+  }
+
+  .feed-info {
+      width: 57%;
+  }
+
+  /* Footer =========================== */
+
+  .footer-logo {
+      width: 30%;
+      margin: auto;
+  }
+
+}
+
+@media screen and (min-width: 940px) {
+  /* Desktop */
+
+  /* Header =========================== */
+
+  .main-header {
+      width: 100%;
+      margin: auto;
+      padding: 0 3%;
+  }
+
+  .main-header .header-wrapper {
+      width: 94%;
+      max-width: 960px;
+      margin: 0 auto;
+  }
+
+  .logo {
+      width: 40%;
+      float: left;
+  }
+
+  nav {
+      width: 60%;
+      float: left;
+  }
+
+  /* Featured News Item =========================== */
+
+  .top-story {
+      width: 57%;
+  }
+
+  .top-img {
+      width: 55%;
+      float: left;
+      padding-right: 3%;
+  }
+
+  .top-info {
+      width: 55%;
+
+  }
+
+  /* Side Bar =========================== */
+
+  .sidebar {
+      clear: right;
+      width: 37%;
+      float: right;
+  }
+
+  .sidebar-about-us,
+  .sidebar-faqs {
+      display: block;
+  }
+
+  /* Feed =========================== */
+
+  .feed {
+    width: 100%;
+  }
+
+  .feed-img {
+    float: left;
+    width: 16%;
+  }
+
+  /* Footer =========================== */
+
+  footer {
+    clear: both;
+    margin: auto;
+    width: 100%;
+  }
+
 }
 
 @media print,
