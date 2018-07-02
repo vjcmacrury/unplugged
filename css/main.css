@@ -104,32 +104,36 @@ textarea {
   body,
   html {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #eeeeee;
   }
 
   a {
     font-weight: 700;
-    color: #23a4cc;
     text-decoration: none;
   }
 
   p {
-
+    font-size: 1em;
+    line-height: 1.4;
   }
 
   img {
-
+    width: 100%;
   }
 
   h1, h2, h3, h4 {
-
+    font-weight: 700;
   }
 
   h1 {
-
+    font-size: 1.313em;
+    line-height: 1.6;
   }
 
   h2 {
-
+    font-size: 1em;
   }
 
   figure {
@@ -137,18 +141,43 @@ textarea {
   }
 
   .btn {
+    box-shadow: 2px 2px 0px #DADADA;
+    color: #ffffff;
+    display: block;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 2.5;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
 
   }
 
   input.btn {
-
+    background-color: #ff1256;
   }
 
-   figure,
-   img {
-     margin: 0;
-     padding: 0;
-   }
+  figure,
+  img {
+    margin: 0;
+    padding: 0;
+  }
+
+  a:link {
+    color: #222222;
+  }
+
+  a:visited {
+    color: #ff1256;
+  }
+
+  .top-q {
+     border-top: none;
+  }
+
+  li {
+    list-style-type: none;
+  }
 
 /* ========================================
    Header
@@ -159,8 +188,24 @@ textarea {
   }
 
   nav {
+    background-color: #dddddd;
     width: 100%;
   }
+
+  ul {
+    padding: 0;
+  }
+
+  nav li {
+    border: 1px solid #cfcacb;
+    color: #000;
+    padding-bottom: 1.096em;
+    padding-top: 1.096em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
 
 /* ========================================
    Main Content
@@ -175,41 +220,119 @@ textarea {
 
 /* ======== Featured News Item ============ */
 
-.top-story {
-  width: 100%;
-}
+  .top-story {
+    width: 100%;
+  }
 
 /* ======== Sidebar ======================== */
 
-.sidebar-about-us,
-.sidebar-faqs {
-  display: none;
-}
+  .sidebar-about-us,
+  .sidebar-faqs {
+    display: none;
+  }
 
+  .sidebar {
+    border-top: 1px solid #cccccc;
+  }
+
+  .sidebar-newsletter input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 0;
+  }
+
+  .sidebar-newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+  }
 
 /* ======== Feed ========================== */
 
-.feed {
-  width: 100%;
-}
+  .feed {
+    width: 100%;
+  }
 
-.feed-img {
-  width: 45%;
-}
+  .feed-img {
+    clear: both;
+    float: left;
+    width: 45%;
+  }
+
+  .feed-item {
+    border-top: 1px solid #cccccc;
+  }
+
+  .feed-item p {
+    display: none;
+  }
+
 
 /* ======== ABOUT PAGE ==================== */
 
-.contact-info{
-    width: 100%;
-}
+  .contact-info {
+    margin-top: 1.973em;
+  }
+
+  .contact-info,
+  .mission,
+  .team {
+    margin-left: 1.246em;
+    margin-right: 1.246em;
+    line-height: 1.125;
+  }
+
+  .contact-info li {
+    display: inline;
+  }
+
+  .contact-info .indent {
+    background-color: inherit;
+    margin-left: 4em;
+  }
+
+  .contact-info p {
+    font-size: .875em;
+  }
+
+  .contact-info .strong {
+    font-weight: 700;
+  }
+
+/* ======== FAQ ==================== */
+
+  .faq {
+    margin-left: 1.196em;
+    margin-right: 1.196em;
+  }
+
+  .faq.bold {
+    font-size: 1.313em;
+  }
+
+  .faq-questions {
+    border-top: 1px solid #cccccc;
+    line-height: 1.43;
+    left: 1.184em;
+    top: 18.344em;
+  }
+
+  .faq-questions h2 {
+    font-weight: normal;
+  }
+
+  .faq-questions p {
+    font-size: .875em;
+  }
 
 /* ========================================
    Footer
    ======================================== */
 
   footer {
+    border-top: 1px solid #cccccc;
+    margin-top: 7.288em;
+    padding-top: 0.971em;
   	width: 100%;
-  	margin: auto;
+
   }
 
   .footer-logo {
